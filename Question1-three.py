@@ -88,4 +88,6 @@ G.add_edge('g', 'c', weight=12)
 G.add_edge('l', 'e', weight=15)
 G.add_edge('l', 'h', weight=14)
 
-print(list(prim_mst_edges(G, True, 'weight', True, True)))
+
+for u, v, d in prim_mst_edges(G, True, 'weight', True, True):
+    print(f"({u}, {v}, " + str(d) + ")")
